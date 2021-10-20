@@ -129,4 +129,12 @@
         android:icon="@*android:drawable/ic_settings_print"
         android:fragment="com.android.settings.print.PrintSettingsFragment"
         android:order="35"/>
+
+    <ListPreference
+        android:key="connectivity_check_settings"
+        android:title="@string/connectivity_check_title"
+        android:summary="@string/connectivity_check_summary"
+        android:entries="@array/connectivity_check_entries"
+        android:entryValues="@array/connectivity_check_values"
+        android:order="30"/>
 </PreferenceScreen>

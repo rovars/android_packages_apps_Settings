@@ -102,6 +102,8 @@ public class NetworkDashboardFragment extends DashboardFragment implements
                 new PrivateDnsPreferenceController(context);
         final PrintSettingPreferenceController printerController =
                 new PrintSettingPreferenceController(context);
+        final ConnectivityCheckPreferenceController connectivityCheckPreferenceController =
+                new ConnectivityCheckPreferenceController(context);
 
         if (lifecycle != null) {
             lifecycle.addObserver(mobilePlanPreferenceController);
@@ -119,6 +121,7 @@ public class NetworkDashboardFragment extends DashboardFragment implements
         controllers.add(mobilePlanPreferenceController);
         controllers.add(privateDnsPreferenceController);
         controllers.add(printerController);
+        controllers.add(connectivityCheckPreferenceController);
         return controllers;
     }
 
