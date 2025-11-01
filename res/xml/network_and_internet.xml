@@ -135,5 +135,6 @@
         android:summary="@string/connectivity_check_summary"
         android:entries="@array/connectivity_check_entries"
         android:entryValues="@array/connectivity_check_values"
+        android:icon="@drawable/ic_dns"
         android:order="30"/>
 </PreferenceScreen>
